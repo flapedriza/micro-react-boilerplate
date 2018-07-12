@@ -8,7 +8,8 @@
   "scripts": {
     "js-standard": "standard --fix src",
     "prestart": "npm install",
-    "start": "webpack --mode development",
+    "start": "webpack-dev-server --mode development",
+    "start:docker": "webpack-dev-server --host 0.0.0.0 --public=localhost:$PORT --port 80 --mode development",
     "build": "webpack --mode production"
   },
   "devDependencies": {
